@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:background="@color/colorAccent">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+                android:layout_width="168dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:textSize="30sp"
+                android:id="@+id/num1" android:layout_weight="1" android:hint="999.999"/>
+        <TextView
+                android:text="X"
+                android:textSize="30sp"
+                android:layout_width="33dp"
+                android:gravity="center"
+                android:layout_height="wrap_content" android:id="@+id/operador" android:layout_weight="1"/>
+        <EditText
+                android:layout_width="167dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textSize="30sp"
+                android:ems="10"
+                android:id="@+id/num2" android:layout_weight="1" android:hint="999.999"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+                android:text="Limpiar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Blim"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textSize="25sp"
+                android:layout_weight="1" style="@style/Widget.AppCompat.Button.Colored"/>
+        <Button
+                android:text="Resultado"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textSize="25sp"
+                android:layout_height="wrap_content" android:id="@+id/Bresul" android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Colored"/>
+    </LinearLayout>
+    <Button
+            android:text="Cancelar"
+            android:layout_width="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textSize="25sp"
+            android:layout_height="wrap_content" android:id="@+id/Bcan"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+    <TextView
+            android:gravity="center"
+            android:textSize="50sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/resultado"/>
+</LinearLayout>

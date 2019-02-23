@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">PracticaFinal</string>
+    <string name="Lcancelar">Cancelar</string>
+    <string name="Laceptar">Aceptar</string>
+    <string name="Lcontrasena">Contraseña</string>
+    <string name="Lusuario">Usuario</string>
+    <string name="continuar">Continuar</string>
+    <string name="acerca_de">Acerca de</string>
+    <string name="mundo_web">Mundo web</string>
+    <string name="suma">Suma</string>
+    <string name="resta">Resta</string>
+    <string name="multiplicacion">Multiplicacion</string>
+    <string name="division">División</string>
+    <string name="camara">Camara</string>
+    <string name="gps">GPS</string>
+    <string name="salir">Salir</string>
+</resources>

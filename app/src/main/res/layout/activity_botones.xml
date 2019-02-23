@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Botones"
+        android:orientation="vertical"
+        android:background="@drawable/login">
+
+    <ImageView
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_width="221dp"
+            android:layout_height="172dp"
+            app:srcCompat="@drawable/perfil" android:id="@+id/imageView2"/>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginBottom="100dp"
+                    android:background="@color/Login">
+
+                <Button
+                        android:text="@string/acerca_de"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginStart="50dp"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="50dp"
+                        android:layout_height="wrap_content" android:id="@+id/Bacercade"
+                        style="@style/Widget.AppCompat.Button.Colored"/>
+                <Button
+                        android:text="@string/mundo_web"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginEnd="50dp"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content" android:id="@+id/Bweb"
+                        style="@style/Widget.AppCompat.Button.Colored"/>
+                <Button
+                        android:text="@string/suma"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginEnd="50dp"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content" android:id="@+id/BSuma"
+                        style="@style/Widget.AppCompat.Button.Colored"/>
+                <Button
+                        android:text="@string/resta"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginEnd="50dp"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content" android:id="@+id/BResta"
+                        style="@style/Widget.AppCompat.Button.Colored"/>
+                <Button
+                        android:text="@string/multiplicacion"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginEnd="50dp"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content" android:id="@+id/Bmulti"
+                        style="@style/Widget.AppCompat.Button.Colored"/>
+                <Button
+                        android:text="@string/division"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginStart="50dp"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="50dp"
+                        android:layout_height="wrap_content" android:id="@+id/Bdiv"
+                        style="@style/Widget.AppCompat.Button.Colored"/>
+                <Button
+                        android:text="@string/camara"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginStart="50dp"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="50dp"
+                        android:layout_height="wrap_content" android:id="@+id/Bcamara"
+                        style="@style/Widget.AppCompat.Button.Colored"/>
+                <Button
+                        android:text="@string/gps"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginEnd="50dp"
+                        android:layout_height="wrap_content" android:id="@+id/BGps"
+                        style="@style/Widget.AppCompat.Button.Colored"/>
+                <Button
+                        android:text="@string/salir"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginEnd="50dp"
+                        android:layout_height="wrap_content" android:id="@+id/Bsalir"
+                        android:background="@color/Rojo"
+                        style="@style/Widget.AppCompat.Button.Colored"/>
+
+
+            </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
