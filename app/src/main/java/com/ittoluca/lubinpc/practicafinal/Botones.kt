@@ -110,6 +110,19 @@ class Botones : AppCompatActivity(){
             startActivity(intent)
         }
     }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        val intent=Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE)
+        val file=File(urlimagen)
+        val uri= Uri.fromFile(file)
+        intent.setData(uri)
+        Toast.makeText(this,"La foto se guardo en la carpeta Pictures",Toast.LENGTH_LONG).show()
+        this.sendBroadcast(intent)
+        val intnt = Intent(Intent.ACTION_VIEW, Uri.parse("content://media/internal/images/media"))
+        startActivity(intnt)
+    }
+
     fun operaciones(op:Int){
 
         var num1=0.0
@@ -170,11 +183,14 @@ class Botones : AppCompatActivity(){
         }
     }
 
+
     fun creararchivofoto():File? {
         val time=SimpleDateFormat("yyyyMMdd_HHmmss").format(Date())
         val nombreImg="JPEG_"+time+"_"
-        val directorio= getExternalFilesDir(Environment.DIRECTORY_PICTURES)
-        val imagen=File.createTempFile(nombreImg,".jpg",directorio)
+        //val directorio= getExternalFilesDir(Environment.DIRECTORY_PICTURES)
+        val directorio=Environment.getExternalStorageDirectory()
+        val dir=File(directorio.absolutePath+"/Pictures/")
+        val imagen=File.createTempFile(nombreImg,".jpg",dir)
           urlimagen="file://"+imagen.absolutePath
         return imagen
     }
